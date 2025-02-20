@@ -1,0 +1,91 @@
+﻿19/02
+    Características de classe
+
+        NivelDeAcesso class NomeClasse
+        {
+            //Corpo da classe
+            //Atributo
+            //Construtores
+            //Metodos
+        }
+
+        Atributos
+            2 Tipos de atributos:
+                Características:
+                    São informações que aparecem junto com o objeto. Uma vez que o objeto existe as características passam a existir.
+                    Nunca mudam ou mudam muito raramente e sempre por razões externas ao sistema. 
+                    Características não podem ser calculadas ou deduzidas e também não tem um valor inicial ou default. Só podem ser informadas
+
+                Indicadores de Estados:
+                    Geralmente tem um valor inicial conhecido. O estado de um objeto muda como consequência de ações que o objeto realiza ou sofre.
+
+            Níveldeacesso tipo identificador = valor;
+
+            Exemplo:
+                Public class Pessoa
+                {
+                    private String nome, cpf;
+                    //construtores
+                    //Métodos
+                }
+
+        Métodos de acesso 
+            Permitem que os atributos sejam alterados e lidos por entidades externas, mas sempre com controle da classe.
+
+                Setters: Métodos que alteram o valor dos atributos. usando o valor que é informado no parâmetro do método. O ideal é que o setter faça uma validação 
+                do valor recebido. Para cada atributo que seja característica deve existir um setter.
+                Exemplo:
+                    Public class Pessoa
+                    {
+                        private String nome, cpf;
+                        public void SetNome(String valNome)
+                        {
+                            if(!valNome.isEmpty())
+                            {
+                                This.nome=valNome;
+                            }
+                        }
+                    }
+
+                Getters: retornam o valor do atributo
+                Exemplo:
+                    Public class Pessoa
+                    {
+                        private String nome, cpf;
+                        public void GetNome()
+                        {
+                            return This.nome;
+                        }
+                    }
+            
+        Niveis de acesso para atributos e metoso
+            Public -> Sem restrições.
+            Protected -> Acessi dentro do mesmo pacote e pelas classes descendentes.
+            Omitir -> Acesso padrão. Apenas dentro do mesmo pacote
+            Private: Apenas a propria classe tem acesso. Atributos quase sempre são privados
+
+            É aconcelhavel declarar em todas as classes um métpodos que imprima os valores dos atributos.
+                Exemplo:
+                    Public class Pessoa
+                        {
+                            private String nome, cpf;
+                            public void SetNome(String valNome)
+                            {
+                                if(!valNome.isEmpty())
+                                {
+                                    This.nome=valNome;
+                                }
+                            }
+                            public void GetNome()
+                            {
+                                return This.nome;
+                            }
+                            public void print()
+                            {
+                                System.out.println("Nome: " + nome + "/n" + "cpf: " + cpf);
+                            }
+                        }
+
+        Operador Ternario
+            exemplo: logica ? ValorVerdadeiro : ValorFalso
+            
