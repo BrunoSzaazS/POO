@@ -5,10 +5,11 @@ public class Exercicio1
     {
         Aluno a = new Aluno();
         
-        a.setNome("jao melao");
-        a.setRg("123456");
-        a.setMedia(6.5);
-        a.setFaltas(5);
-        a.Print();
+        a.setNome("carlos");
+        a.setRa("123456789")
+        a.Faltou();
+        a.Justificou(1);
+        a.Provas(5,6,0)
+
     }
 }

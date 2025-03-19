@@ -89,3 +89,18 @@
         Operador Ternario
             exemplo: logica ? ValorVerdadeiro : ValorFalso
             
+26/02
+
+Construtores
+    São métodos especializados na construção de objetos. o objetivo do construtor é deixar o objeto em um estado
+    válido para que possa ser ultilizado logo após a construção.
+    Gerealmente isso significa colocar valores válidos nos atributos. Em java, os contrutores sempre tem o mesmo nome que a classe.
+    Além disto o construtor não pode ter nenhum tipo de retorno, nem mesmo void.
+    Os construtores são chamados sempre pelo operador new ou por outros construtores. O operador new é responsavel
+    por alocar memória para o objeto que será construído, chamar o construtor da classe e tem como resultado uma referência
+    ao objetp construído. Essa referência precisa ser armazenada em uma variãvel de referência.
+
+Referência This
+    Dentro de todos os objetos, a referência this armazena o endereço do proprio objeto. Geralmente é ultilizado para 
+    resolver conflitos de nomes entre atributos e parametros. Também serve para chamar um construtor a partir de outro construtor.
+    
