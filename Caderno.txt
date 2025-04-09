@@ -88,7 +88,7 @@
 
         Operador Ternario
             exemplo: logica ? ValorVerdadeiro : ValorFalso
-            
+
 26/02
 
 Construtores
@@ -104,3 +104,44 @@ Referência This
     Dentro de todos os objetos, a referência this armazena o endereço do proprio objeto. Geralmente é ultilizado para 
     resolver conflitos de nomes entre atributos e parametros. Também serve para chamar um construtor a partir de outro construtor.
     
+12/03
+
+Assinatura de Métodos
+    É o que indentifica um método e o torna ùnico no contexto onde é válido. Na mesma classe, não pode haver dois
+    métodos  com a mesma assinatura. A assinatura é composta pelo nome do método e pelo tipo, ordem e quantidade de parâmetros.
+    ex: metodod: public void umMetodo(String st, int val)
+        assinatura: umMetodo(String,int)
+
+Sobreposição
+    Ocorre quando uma classe descendente reescreve um método que já existe em alguma classe ancestral, usando a mesma assinatura.
+    Um ibjeto criado a partir da classe descendente, só terá acesso a nova versão do método. No entanto, dentro da 
+    classe descendente, ainda é possivel acessar a versão ancestral usando a referencia super.
+
+Construtores descendentes
+    Um construtor de uma classe descendente, precisa obrigatoriamente fazer uma chamada a algum construtor de sua classe
+    imediatamente ancestral em sua primeira linha de código.Essa chamada é feita usando a referência super.
+
+
+19/03
+Classes Abstratas
+    São classes que não podem ser instanciadas. Ou porque não tem definições suficientes para construir objetos, ou porque objetos
+    da classe não fazem sentido dentro do sistema. Servem apenas para serem ancestrais de outras classes.
+    Ex:
+    publuic abstract class NomeClasse
+    {
+        //Atributos
+        //Construtores
+        //Metodos
+    }
+
+Metodos Abstratos
+    Só podem existir em classes abstratas. Um método abstrato é declarado mas não é implementado. Aimplementação deve ser feira
+    pelas classes descendentes Geralmente são usados quando a mesma ação pode ser executada de maneiras diferentes dependendo
+    da classe do objet. mesmo não tendo código na classe que o declara o método já pode ser chamado.
+    EX:
+    publuic abstract class NomeClasse
+    {
+        //Atributos
+        //Construtores
+        Public abstract void metodo();
+    }

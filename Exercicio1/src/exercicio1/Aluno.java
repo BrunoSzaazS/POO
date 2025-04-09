@@ -1,12 +1,12 @@
 package exercicio1;
-public class Aluno
+public class Aluno extends Exercicio1
 {
     private String nome, ra;
     private int faltas;
     private double media;
     
     //Construtores
-    public Pessoa(String nome, ra)
+    public Aluno(String nome,String ra)
     {
         if(!nome.isEmpty())
         {
@@ -63,7 +63,7 @@ public class Aluno
     {
         this.faltas -=quantidade;
     }
-    public void Provas (double p1, double p2, double sub,)
+    public void Provas (double p1, double p2, double sub)
     {
         if(p1<6 || p2<6)
         {
@@ -73,12 +73,12 @@ public class Aluno
             }
             else
             {
-                thus.media=(p1+sub)/2
+                this.media=(p1+sub)/2;
             }
         }
         else
         {
-            this.media=(p1+p2)/2
+            this.media=(p1+p2)/2;
         }
     }
 

@@ -1,10 +1,10 @@
-package Construtores;
+package construtores;
 public class Pessoa
 {
     private String nome, rg;
     
     //Construtores
-    public Pessoa(String nome, rg)
+    public Pessoa(String nome,String rg)
     {
         if(!nome.isEmpty())
         {
@@ -19,11 +19,11 @@ public class Pessoa
     //Setters
     public void setNome(String nome)
     {
-        this.nome=nome
+        this.nome=nome;
     }
     public void setRg(String rg)
     {
-        this.rg=rg
+        this.rg=rg;
     }
     //Getters
     public String getNome()
